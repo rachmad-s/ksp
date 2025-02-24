@@ -2,6 +2,7 @@ import Title from "antd/es/typography/Title";
 import Text from "antd/es/typography/Text";
 import Image from "next/image";
 import Link from "antd/es/typography/Link";
+import NextLink from "next/link";
 import { Button, Input } from "antd";
 import Password from "antd/es/input/Password";
 
@@ -25,9 +26,14 @@ function SignInPage() {
                             </div>
                             <Input placeholder="Email" />
                             <Password placeholder="Password" />
-                            <Button type="primary">Masuk</Button>
+                            <NextLink href={'/company/home'}>
+                                <Button type="primary">Masuk</Button>
+                            </NextLink>
                         </div>
-                        <Text>Belum punya akun? <Link>Daftar</Link></Text>
+                        <div className="flex gap-1">
+                            <Text>Belum punya akun?</Text>
+                                <Link href={'/company/sign-up'}>Daftar</Link>
+                        </div>
                     </div>
                 </div>
             </div>
