@@ -215,7 +215,7 @@ export default function JobCard({ type }: { type: 'published' | 'draft' }) {
             },
             {
                 label: (
-                    <NextLink href="/">
+                    <NextLink href="#">
                         <EditOutlined /> Edit Iklan
                     </NextLink>
                 ),
@@ -225,7 +225,7 @@ export default function JobCard({ type }: { type: 'published' | 'draft' }) {
             },
             {
                 label: (
-                    <NextLink href="/">
+                    <NextLink href="#">
                         <PoweroffOutlined /> Nonaktifkan Iklan
                     </NextLink>
                 ),
@@ -234,7 +234,7 @@ export default function JobCard({ type }: { type: 'published' | 'draft' }) {
             },
             {
                 label: (
-                    <NextLink href="/">
+                    <NextLink href="#">
                         <DeleteOutlined /> Hapus Iklan
                     </NextLink>
                 ),
