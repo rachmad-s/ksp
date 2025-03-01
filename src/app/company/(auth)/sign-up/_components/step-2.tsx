@@ -60,7 +60,7 @@ function SignUpFormStep2({
                         <input type="text" placeholder="Nama Perusahaan" className="focus:outline-none font-bold text-2xl" />
                         <div className="grid grid-cols-2 gap-4">
                             <div className="flex flex-col gap-1">
-                                <div className="text-sm">Lokasi</div>
+                                <div className="text-sm font-thin">Lokasi</div>
                                 <div className="flex items-center gap-1">
                                     <div className={classNames(!values.location && 'text-[#BFBFBF]', 'text-lg')}>{values.location ? values.location : 'Pilih Lokasi'}</div>
                                     <Dropdown menu={{
@@ -89,7 +89,7 @@ function SignUpFormStep2({
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <div className="text-sm">Jumlah Karyawan</div>
+                                <div className="text-sm font-thin">Jumlah Karyawan</div>
                                 <div className="flex items-center gap-1">
                                     <div className={classNames(!values.totalEmployee && 'text-[#BFBFBF]', 'text-lg')}>{values.totalEmployee ? values.totalEmployee : 'Pilih Jumlah Karyawan'}</div>
                                     <Dropdown menu={{
@@ -130,7 +130,7 @@ function SignUpFormStep2({
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <div className="text-sm">Bidang</div>
+                                <div className="text-sm font-thin">Bidang</div>
                                 <div className="flex items-center gap-1">
                                     <div className={classNames(!values.field && 'text-[#BFBFBF]', 'text-lg')}>{values.field ? values.field : 'Pilih Bidang'}</div>
                                     <Dropdown menu={{
@@ -159,7 +159,7 @@ function SignUpFormStep2({
                                 </div>
                             </div>
                             <div className="flex flex-col gap-1">
-                                <div className="text-sm">Website Perusahaan</div>
+                                <div className="text-sm font-thin">Website Perusahaan</div>
                                 <div className="flex items-center gap-1">
                                     <input className="focus:outline-none text-lg placeholder-[#BFBFBF]" onChange={(e) => setValues((value) => ({ ...value, website: e.target.value }))} value={values.website || ''} placeholder="www.perusahaan.com" />
                                 </div>

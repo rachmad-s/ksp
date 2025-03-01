@@ -3,6 +3,7 @@
 import Titles from "@/components/typography/title";
 import { Tabs, TabsProps } from "antd";
 import JobPreview from "../_components/job-preview";
+import Candidates from "../_components/candidates";
 
 const items: TabsProps['items'] = [
     {
@@ -13,7 +14,7 @@ const items: TabsProps['items'] = [
     {
         key: '2',
         label: 'Kandidat',
-        children: <>User</>,
+        children: <Candidates />,
     }
 ];
 
