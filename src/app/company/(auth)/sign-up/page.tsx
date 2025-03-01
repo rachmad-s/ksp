@@ -12,7 +12,6 @@ function SignUpPage() {
     }
     if (step === 0)
         return <SignUpFormStep1 nextStep={nextStep} />
-
     return <SignUpFormStep2 />
 }
 
