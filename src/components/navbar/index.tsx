@@ -16,11 +16,6 @@ const items: MenuProps['items'] = [
         ),
         key: '0',
     },
-
-    // {
-    //   type: 'divider',
-    // },
-
 ];
 
 export default function Navbar() {
@@ -37,7 +32,7 @@ export default function Navbar() {
     return (
         <div className="bg-white border-b border-[#E0E0E0] py-2.5 px-2.5 mb-[40px]">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="">
+                <div className="md:inline-block hidden">
                     <Image src={'/images/logo-mandiri.svg'} alt="Logo" height={48} width={120} />
                 </div>
                 <div className="flex-1 text-center">
@@ -45,7 +40,7 @@ export default function Navbar() {
                     <NextLink className={`mr-3  rounded-md p-2 ${jobsClassname}`} href="/company/jobs"> Iklan Pekerjaan </NextLink>
                 </div>
                 <div>
-                    <span className="text-blue-500 mr-3">
+                    <span className="text-blue-500 mr-3 md:inline-block hidden">
                         John Doe
                     </span>
                     <Dropdown menu={{ items }} trigger={['click']} className="cursor-pointer">
