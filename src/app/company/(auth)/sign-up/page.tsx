@@ -10,10 +10,13 @@ function SignUpPage() {
     const nextStep = () => {
         setStep((step) => step += 1);
     }
+    const prevStep = () => {
+        setStep((step) => step -= 1);
+    }
     if (step === 0)
         return <SignUpFormStep1 nextStep={nextStep} />
 
-    return <SignUpFormStep2 />
+    return <SignUpFormStep2 prevStep={prevStep} />
 }
 
 export default SignUpPage;
