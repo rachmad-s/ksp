@@ -26,7 +26,7 @@ function SignInPage() {
                             </div>
                             <Input placeholder="Email" />
                             <Password placeholder="Password" />
-                            <NextLink href={'/company/home'}>
+                            <NextLink href={'/company/dashboard'}>
                                 <Button type="primary">Masuk</Button>
                             </NextLink>
                         </div>
