@@ -48,12 +48,12 @@ export default function JobPreview({ editable, showApplyButton, hideTitle }: Job
                 </div>
                 <div className="mt-8">
                     <p className="text-base text-[#8C8C8C]">Tayang 4 hari yang lalu • Diperbaharui 19 menit yang lalu</p>
-                    {showApplyButton && (
+                    {/* {showApplyButton && (
                         <div>
                             <Button className="!p-6 mt-4 !text-xl mr-3" type="primary">Lamar Sekarang</Button>
                             <Button className="!p-6 mt-4 !text-xl">Simpan</Button>
                         </div>
-                    )}
+                    )} */}
 
                 </div>
             </section>

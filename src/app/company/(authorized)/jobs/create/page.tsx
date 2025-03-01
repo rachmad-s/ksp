@@ -200,7 +200,7 @@ export default function Page() {
                                 ]
                             }}>Preview</Dropdown.Button>
                         </div>
-                        <Button type="primary" onClick={() => { }}>Simpan Lowongan</Button>
+                        <Button type="primary" onClick={() => {router.push('/company/jobs')}}>Simpan Lowongan</Button>
                     </div>
                 </div>
             </div>

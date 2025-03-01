@@ -20,14 +20,14 @@ export default function JobList({ type }: { type: 'published' | 'draft' }) {
                         )}
 
                     </div>
-                    <div className="flex gap-2">
+                    {/* <div className="flex gap-2">
                         <div className="text-blue-500 bg-blue-50 rounded-md border border-blue-500">
                             <LayoutOutlined className="p-3" />
                         </div>
                         <div className="bg-gray-50 rounded-md border border-gray-500">
                             <UnorderedListOutlined className="p-3" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             <section className="mt-5">
