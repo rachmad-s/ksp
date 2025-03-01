@@ -14,7 +14,7 @@ function SignUpFormStep1({
         name: '',
         lastName: '',
         businessName: '',
-        country: '',
+        country: undefined,
         phone: ''
     })
     const disable = Object.values(values).some(value => !value)

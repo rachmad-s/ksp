@@ -7,12 +7,14 @@ import classNames from "classnames";
 import Title from "antd/es/typography/Title";
 import TextArea from "antd/es/input/TextArea";
 import Skill from "./skill";
+import { useRouter } from "next/navigation";
 
 function SignUpFormStep2({
     prevStep,
 }: {
     prevStep: () => void
 }) {
+    const router = useRouter()
     const [values, setValues] = useState({
         location: '',
         totalEmployee: '',
@@ -32,6 +34,9 @@ function SignUpFormStep2({
         setFile(files ? files[0] : undefined)
     }
     const objectUrl = file && URL.createObjectURL(file)
+    const register = () => {
+        router.push('/company/dashboard')
+    }
 
     return (
         <div className="w-screen h-screen">
@@ -222,7 +227,7 @@ function SignUpFormStep2({
                 <div className="container mx-auto">
                     <div className="flex gap-2">
                         <Button variant="outlined" onClick={() => prevStep()}>Kembali</Button>
-                        <Button type="primary">Simpan</Button>
+                        <Button type="primary" onClick={() => register()}>Simpan</Button>
                     </div>
                 </div>
             </div>
