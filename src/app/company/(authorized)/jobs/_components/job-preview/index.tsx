@@ -1,6 +1,7 @@
 import Titles from "@/components/typography/title";
 import { Button, Card, Divider, Tag } from "antd";
 import Image from "next/image";
+import Link from "next/link";
 
 interface JobPreviewProps {
     editable?: boolean;
@@ -21,7 +22,10 @@ export default function JobPreview({ editable, showApplyButton, hideTitle }: Job
                     </div>
                     <div>
                         {editable && (
-                            <Button>Ubah Iklan</Button>
+                            <Link href={`/company/jobs/update?id=${1}`}>
+                                <Button>Ubah Iklan</Button>
+                            </Link>
+
                         )}
                     </div>
 
