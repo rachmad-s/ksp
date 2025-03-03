@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
       {
         source: '/',
         destination: '/company/sign-in',
-        permanent: false,
+        permanent: true,
       },
     ]
   },
